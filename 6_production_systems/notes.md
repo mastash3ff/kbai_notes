@@ -37,3 +37,71 @@ Semantic network is represented by Knowledge Level.  What is the content of the 
 Want to build theories at all three of these different levels of abstractions.
 
 Most of AI work is done at the top two levels.
+
+## What are the layers of Watson?
+
+Physical Computer(Hardware layer), Searching & Decision-Making(Algorithm Layer), and answering the inputted clue(Knowledge Layer).
+
+## Assumptions of Cognitive Architectures
+
+* Goal-oriented
+* Rich,complex environment
+* Significant knowledge
+* Symbols and abstractions
+* Flexible and function of the environment
+
+## Architecture + Content = Behavior
+
+Function for cognitive architectures:  Percepts -> Action
+
+Similiar to computer architecture, stored memory is operated on to get an action.
+
+What is a good architecture?
+
+## A Cognitive Architecture for Production Systems
+
+Deliberation:  Reasoning <-> Learning <-> Memory
+
+SOAR:  Procedural Semantic Episodic
+             \       |      /
+             Working Memory
+
+SOAR has been worked on for the last 30 years by Neville, Lear and Rosenbloom.
+
+Episodic knowledge has to do with events.
+Semantic knowledge has to do with generalizations in the forms of concepts and models of the world.
+Procedural has to do with how to do certain things.
+
+## Return to the Pitcher
+
+How do baseball Percepts get mapped into action?
+Pitcher has certain knowledge.  Can perceive from the world.  For example, can perceive the bases, batter, current state of game, specific batter, positions of own team mates.  Picture has goals.
+
+## Action Selection
+
+State 0.  Feature1 : value1.  Piicture wants to get to goal state.  Path from current state to goal state.  Illustrated in abstract state space.
+
+## Putting Content in the Architecture
+
+Inning : 7th
+portion : top
+runners : 2nd and 3rd
+outs : 2
+batter : prado
+average : .256
+bats: right-handed
+score: 3-2
+goal: escape inning (don't let batter hit the ball)
+
+## Bringing in Memory
+
+Using the previous knowledge, present production rules.
+
+i.e. If goal is to Escape, I perceive 2 outs, I perceive a runner on 2nd and I perceive no runner on 1st. THEN suggest goal intenionlaly walk batter (Intentional Walk)
+
+another example, If goal is Intentional Walk THEN suggest intentional-walk operator
+
+Capturing these rules in SOAR's long term memory.
+
+Knowledge is very detailed in these examples.
+
