@@ -105,3 +105,44 @@ Capturing these rules in SOAR's long term memory.
 
 Knowledge is very detailed in these examples.
 
+## Chunking
+
+A technique used to dismiss an operator to use when there is a conflict between multiple operator choices.
+
+## Assignment
+
+How would a production system be used to design an agent that can solve RPMS?
+* Address incoming problems.  Knows what to look for in a new problem and it knows how to reply when it finds those things.
+
+OR
+
+* Production rules that are specific to a given problem.  When the agent receives a new problem, it induces some production rules that govern the transformation between certain figures and then transfers that to other rows and columns.  Learns from the problem it receives.
+
+How is the learning going to take place?
+How is it actually going to write these production rules, based on a new problem?
+What do we get out of actually having these production rules, that are written based on individual problems?
+
+## Wrap Up
+
+Cognitive Architecture.
+
+Fundamental units of learning.
+
+SOAR framework implements production systems.
+
+Production systems enable action selection.
+
+Map percepts -> action.
+
+When a production hits an impass, it can use chunking to learn a new rule to overcome the impass.
+
+## Cognitive Connection
+
+Working memory correlates to short-term memory in humans.
+
+Similiary between SOAR and human behavior when faced with problems of arithmetic algebra.
+
+AI can be good in closed world problems but cannot perform as well as humans in open world problems.
+
+How can human knowledge be captured at large so that it can be used for problems in the open?
+
