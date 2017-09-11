@@ -8,7 +8,7 @@
 * frames for advanced sense-making
 
 Frames are knowledge representations.
-Frames are the first unit in common sense reasoning:  Frames - Understanding - Common Sense Reasoning - Scripts
+Frames are the first unit in common sense reasoning:  Frames -> Understanding -> Common Sense Reasoning -> Scripts
 
 ## How we make sense of a sentence?
 
@@ -59,7 +59,7 @@ Complex frames play a strong role in common sense reasoning.
 
 Frames and OOP came up in the 1960s at the same time.
 
-## Excercise:  INterperting a Frame System
+## Excercise:  Interperting a Frame System
 
 Q. What sentence is expressed by these frames(in the lecture video)?
 A. Haruto ate a pepperoni pizza during noon at Pizza Hut.
@@ -132,14 +132,14 @@ Multiple frames will same slots having different contexts and meanings are compl
 
 ## Assignment
 
-* How would you use frmaes todesign an agent that could answer RPMs?
+* How would you use frames todesign an agent that could answer RPMs?
 Receive problem in frames initially or generate frames from reasoning?
 
 With frames in hand, how would they be used to solve the problem based on the frames?
 
 Frames representing individual figures from the problem.  What about representing the problem as a whole?
 
-What about frame representing individual shapes in figure?  How would that level of abstractoin help solve the problem more easily?
+What about frame representing individual shapes in figure?  How would that level of abstraction help solve the problem more easily?
 
 What do frames enable us to do that we couldnt do otherwise?
 
@@ -149,4 +149,4 @@ What do frames enable us to do that we couldnt do otherwise?
 * frmesm with othe represetnations - semantic netsare equivalent representively.  used in production systems.
 * story understanding
 
-Jump forward to understanding, commonse senes reasoning and scripts leverage frames heavily.
+Jump forward to understanding, commons sense reasoning and scripts leverage frames heavily.
