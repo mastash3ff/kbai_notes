@@ -1,4 +1,4 @@
-# Common Sense Reasoning
+# Understanding
 
 ## Preview
 
@@ -117,16 +117,134 @@ How do we know that car was a conveyance and not an agent or location?
 
 In general, while the structure of hte language does provide constraints, these constraints do not always definately determine the meaning of that particular word.  We need to use additional knowledge to figure out teh exact meaning of "car".
 
-## Resolving Ambiguity in Preopositions
+## Resolving Ambiguity in Prepositions
+
+Look at three different examples in which "by" points to
+
+1. That was written by Ashok - by points to an agent
+2. David went to New York by train. - by points to a conveyance
+3. David stood by the statue. - by points to a location
+
+"By" contstrained itself in that it was either agent, conveyance, or location.  It doesn't by itself tell us whether Ashok is either of the categories.  Need additional knowledge.
+
+Assume agent has an ontology of the world.  Term ontology initially comes from philosphy where it means the nature of reality.
+
+AI determine ontology often reference to the conceptualization of the world.  The categories and terms of which I specify the world.  These categories become the vocabulry of the knowledge representation.
+
+Example 1: An ontology tree helps us decide that "by Ashok" is an agent.  Ashok is people which is thus an agent from our ontology tree.
+
+Example 2: Examining "by train", train can be a agent, conveyance, or location.  In the ontology tree, a train is a conveyance so now we know train is a conveyance.
+
+Bottom-Up Processing when initially looking at "David went to New York by Train."  David is a noun, went was a verb.  But then we shifted to top-down processing.  Example, we already have this background knowledg and this background knowledge tells us in a top-down manner that "by here" can refer to an agent, a conveyance, or location.  We also have additional background knowledge represented in an ontology tree that tells us that in this particular sentence the train describes frame to a conveyance.
+
+In short, low-level bottom up processing generates queues which access probes into memory.  Memory returns knowledge represented in an ontology tree and the process then becomes top-down.  Top-down tells us how to interpret the various words in the sentence and how to make sense of the story.
 
 ## Ambiguity in Verbs
 
+Ambiguity happens in verbs as well as propositions.
+
+Example:  I was wondering why the ball was getting bigger then it hit me.
+
+Hit conveys two different interpretations:  occured or physically striked me.
+
+"Can't explain puns to kleptomaniacs because they always take things literally."
+
+Puns often come from words that have two different roles in a sentence at once and the sentence still makes sense.
+
+Going forward we are only looking for one particular meaning but we could build an agent with a bit of humor.  When one sentence can be made that can fill multiple grammatical simultanously.
+
 ## Resolving Ambiguity Verbs
+
+"Take" has 12 different meanings.  How do we know which definition refers to the meaning of "take" in a particular sentence?
+
+Each of the 12 interpretations of "take" can be be represented in frames.  Each frame specifies themantic roles in that particular meaning of take.
+
+Examples:
+
+Take1
+  agent:
+  object:
+
+Take4:
+  agent:
+  medicine:
+
+Take10:
+  agent:
+  coagent:
+  destination:
+
+How would an agent know which "take" meaning belongs to the sentence, "I took the candyh from the baby" among the 12?
+
+Although we started with bottom-up processing, we will shift to top-down-processing.  Inside semantic knowledge about "candy" will eliminate several choices.  Can also eliminate choices from other constraints such as the background knowledge of the preposition "from".  "From" references a source so we eliniate all choices that don't have 'source.'  This leaves one frame choice which interprets "take" as "to steal"
+
+## Exercise Resolving Ambiguity in Verbs
+
+Do all languages have enough similiar structure?  Could we then translate sentences from one languaage to another language?
 
 ## The Earthquake sentences
 
+Back to disabmiguating the earth quake example with the word "kill"
+
+Kill has two meanings we can represent in a frame:
+
+1. to cause the death of
+2. to put an end to
+
+Kill1
+  agent:
+  victim:
+
+Kill2:
+  agent:
+  object:
+
+1st sentence refers to Kill1 while 2nd sentence refers to Kill2.
+
+There are limitations in this theory of representing meanings in frames.  Back to example of "I took the candyh from the baby."
+
+One limitation is that when we have a large number of rules to determine the meaning of "take" by making senbse of hte word "candy" and making sense of the word "from"
+
+When we look at increasingly large number of forms of the sentence, the number of rules we need starts exploding.  Different variations of the sentence involves different interpretations of "take."
+
+=
+(NOT FROM LECTURE but my observation) *"took" can refer to the frame representing "to steal" or it can refer to the frame "to cheat or swindle".  Both interpretations make sense on the frames provided.
+
 ## Assignment - Understanding
+
+How would you use configuration to design an agent that could answer RPMs?
+
+How would you use the notion of understanding the notion of thematical frames, constraint, and ambiguity to address RPMs?
+
+* The idea of multiple possible transformations in earlier problems.  Certain problems could be solved with either rotation or reflection but they would give different answers.
+
+* Might imagine a frame that dictates certain expected values for different transformations and degree of fit to those expectations can dictate the accuracy of that particular answer.
+
+Think about the different phases of the understanding process.
+
+How do you first understand what's happening in the problem?
+How do you fit that into a thematically role frame representation?
+How would that represetntaiton then help you transfer and solve the problem?
 
 ## Wrap Up
 
+* Thematic Role Systems - a more formal type of frame represetnation that capture verbs and tell us what to expect in certain events.
+* Resolving ambiguity - single verbs can actually have ambiguous meanings but thematic role frames can help us differentiate which meaning a verb has in a particular sentence
+* Leveraging constraints - Certain words or frames can constrain the possible meanings of a sentence and help us figure out those ambiguus meanings.
+
+Understanding is used by agents to understand stories and events happening in the world around them.
+
+We have discussed how single words or phrases can have multiple possible meanings but next time it will be done in phrase.  In reverse we will later discuss how multiple phrases or multiple senseces can actually have the same meaning.  How can we discern that sameness the nreact accordingly.
+
 ## Cognitive Connection
+
+We have mostly focused on natural language understanding but that is just one instance of understanding.
+
+Understanding is about making sense of the world.
+
+THe world bombards us with data that comes in acoustic, visual, verbal, numerical.
+
+3 sources of power:
+1. Exploit constraints in the world.  The world behaves in certain ways whether its the social world, the gramitcal world, or physical world.
+2.  We have structured knowledge representations.  Representations in memory capture not just knowledge and its representations but the organization of that knowledge.
+3.  Low level problem bottom up processing helps us activate this knowledge structures from memory.  Once generated, the structures generate expectations that make the processing top-down.
