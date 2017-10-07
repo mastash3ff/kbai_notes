@@ -79,7 +79,7 @@ Pitcher has certain knowledge.  Can perceive from the world.  For example, can p
 
 ## Action Selection
 
-State 0.  Feature1 : value1.  Piicture wants to get to goal state.  Path from current state to goal state.  Illustrated in abstract state space.
+State 0.  Feature1 : value1.  Pitcher wants to get to goal state.  Path from current state to goal state.  Illustrated in abstract state space.
 
 ## Putting Content in the Architecture
 
